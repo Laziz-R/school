@@ -1,11 +1,11 @@
 package uz.netex.school.dto.address;
 
 import lombok.Data;
-import uz.netex.school.entity.BaseEntity;
 import uz.netex.school.entity.address.Region;
 
 @Data
-public class RegionDto extends BaseEntity {
+public class RegionDto {
+    private Long id;
     private String name;
 
     public static RegionDto toDto(Region region) {

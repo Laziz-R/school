@@ -21,7 +21,6 @@ public class RegionService {
     }
 
     public List<RegionDto> getAll() {
-        List<RegionDto> dtoList = repository.findAll().stream().map(RegionDto::toDto).collect(Collectors.toList());
-        return dtoList;
+        return repository.findAll().stream().map(RegionDto::toDto).collect(Collectors.toList());
     }
 }
